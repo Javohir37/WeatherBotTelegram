@@ -60,12 +60,12 @@ async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, Cancel
                 text: "Enter the name of your city",
                 cancellationToken: cancellationToken);
     }
-    /*else if(messageText == "/help"){
+    else if(messageText == "/help"){
         Message sentMessage = await botClient.SendPhotoAsync(
                 chatId: chatId,
-                photo: client1.DownloadFile("https://www.hello.com", "helpPic"), //add some photo i guess to to indicate that there hould be
+                photo: new InputFileUrl("https://www.dropbox.com/s/thuucwwdrnoaz3n/Annotation%202023-02-12%20164555.png?dl=0"), //add some photo i guess to to indicate that there hould be
                 cancellationToken: cancellationToken);
-    }*/
+    }
     else if(messageText == "/weather")
     {
         if (Coordinates.city == "null")
