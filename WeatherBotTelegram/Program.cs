@@ -7,7 +7,7 @@ using Telegram.Bot.Polling;
 using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
 using WeatherBotTelegram;
-var botClient = new TelegramBotClient("5962985202:AAFc7yBOGnfzAyeL_MosYnilVHdCgdz6LPQ");
+var botClient = new TelegramBotClient("");
 
 using CancellationTokenSource cts = new();
 
